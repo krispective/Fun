@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Browser_Details</title>
+
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+</head>
+<body>
+<div id="username">  </div>
+<div id="line_story_visits"></div>
+<script>
+
+if(localStorage.line_story_visits==="NaN")
+{
+  localStorage.setItem("line_story_visits",1);
+}
+else
+{
+  localStorage.line_story_visits++;
+}
+  console.log(localStorage.line_story_visits);
+  document.getElementById("line_story_visits").innerHTML=localStorage.line_story_visits;
+</script>
+<div class="topnav" id="topnav">
+ 
+   <a href="index.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+  <a href="    " id="orange_design"></a>
+</div>
+
+<canvas id="canvas" width=1200px height=700px ></canvas>
+<script src="js/line_story.js">
+
+
+</script>
+
+</body>
+</html>

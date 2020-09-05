@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Browser_Details</title>
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+</head>
+<body>
+<div id="username">  </div>
+<div id="roman_visits"></div>
+<script type="text/javascript">
+
+if(localStorage.roman_visits==="NaN")
+{
+  localStorage.setItem("roman_visits",1);
+}
+else
+{
+  localStorage.roman_visits++;
+}
+  console.log(localStorage.roman_visits);
+  document.getElementById("roman_visits").innerHTML=localStorage.roman_visits;
+</script>
+<div class="topnav" id="topnav">
+ 
+   <a href="index.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+  <a href="    " id="orange_design"></a>
+</div>
+
+<p style="font-size: 15px;">Enter the values and click the respective buttons</p>
+<form id="roman_form">
+	<table>
+	<tr><th><input type="text" id="num" value=""></th>
+	<th><input type="text" id="rom" value=""></th></tr>
+
+	<tr><th><button class="button_roman" onclick="find_roman()">Roman Equivalent</button></th>
+	<th><button class="button_roman" onclick="find_num()">Numerical Equivalent</button></th></tr>
+</table>
+
+</form>
+
+<script src="js/roman.js">
+
+
+</script>
+
+<style type="text/css">
+th,tr{
+	background-color: white;
+	color:black;
+}
+
+	.button_roman{
+		font-size: 10px;
+		padding:10px;
+		background-color: black;
+		color: white;
+	}
+
+	
+</style>
+</body>
+</html>

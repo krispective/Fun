@@ -1,0 +1,106 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tool Bar</title>
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div id="username">  </div>
+<div id="comics_visits"></div>
+<script type="text/javascript">
+
+if(localStorage.comics_visits==="NaN")
+{
+  localStorage.setItem("comics_visits",1);
+}
+else
+{
+  localStorage.comics_visits++;
+}
+  console.log(localStorage.comics_visits);
+  document.getElementById("comics_visits").innerHTML=localStorage.comics_visits;
+</script>
+<div class="topnav" id="topnav">
+ 
+    <a href="index.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+  <a href="    " id="orange_design"></a>
+</div>
+<div class="toolbar_main"><!--******* tool bar Total main div start******** -->
+  <div class="toolbarmenupart"><!--******* tool bar Top menu main div start ********** -->
+   				<div class="toolbarmenupart_lft"><span id="current_page">1</span></div>           
+                <div class="toolbarmenupart_rht"><span>
+               	  <img  class="Leftmenu_arrow" src="Images/spacer.gif"  alt="arrow"  onclick="previouspage()" border="0"/>
+                  <input class="Menubutton_rht" name="" type="button" border="0"  align="left" onclick="previouspage()" value="Previous" />
+                  <input class="Menubutton_lft" name="" type="button" border="0" onclick="nextpage()" value="Next" />
+                  <img class="Rightmenu_arrow " src="Images/spacer.gif" alt="arrow"  onclick="nextpage()" border="0"/></span>
+                </div>
+  </div> <!--******* tool bar Top menu main div End ********** --> 
+            
+  <div class="Toolbarlist"><!--******** tool bar list div start *********** -->
+       	   <div class="Toolbarlist_lft"><!--******** tool bar list left div *********** -->
+   			 <input name="" onclick="firstpage()" type="button" border="0"/><input class="preview" name="" type="button" border="0"/>
+           </div>
+            <div class="Toolbarlist_mid"><input  name="" type="button" border="0"/></div><!--******** tool bar list mid div *********** -->
+            
+           <div class="Toolbarlist_rht"><!--******** tool bar list Right div *********** -->
+            			<input name=""  type="button" border="0"/>                        
+                        <input class="area" onclick="lastpage()" name="" type="button" border="0"/>
+            </div>
+  </div>  <!--******** tool bar list div start *********** -->
+      
+   <div class="toolbarbutton" id="toolbarbuttonmove"><!--******** tool bar move button div start *********** -->
+   		 <div class="toolbarbutton_lft"><span id="toolbarbuttonmovenumber">3</span></div>
+         <div class="toolbarbutton_rht"><span style="position:relative;top:-2px;">Go</span></div>
+  </div>  <!--******** tool bar move button div End *********** -->     
+       
+        </div><!--******* tool bar Total main div End******** -->
+        <div class="comics_container">
+        	<span class="naruto_comics" id="naruto_1"><img src="Images/01.jpg"></span>
+        	<span class="naruto_comics" id="naruto_2"><img src="Images/02.jpg"></span>
+        	<span class="naruto_comics" id="naruto_3"><img src="Images/03.jpg"></span>
+        	<span class="naruto_comics" id="naruto_4"><img src="Images/04.jpg"></span>
+        	<span class="naruto_comics" id="naruto_5"><img src="Images/05.jpg"></span>
+        	<span class="naruto_comics" id="naruto_6"><img src="Images/06.jpg"></span>
+        	<span class="naruto_comics" id="naruto_7"><img src="Images/07.jpg"></span>
+        	<span class="naruto_comics" id="naruto_8"><img src="Images/08.jpg"></span>
+        	<span class="naruto_comics" id="naruto_9"><img src="Images/09.jpg"></span>
+        	<span class="naruto_comics" id="naruto_10"><img src="Images/10.jpg"></span>
+        	<span class="naruto_comics" id="naruto_11"><img src="Images/11.jpg"></span>
+        	<span class="naruto_comics" id="naruto_12"><img src="Images/12.jpg"></span>
+        	<span class="naruto_comics" id="naruto_13"><img src="Images/13.jpg"></span>
+        	<span class="naruto_comics" id="naruto_14"><img src="Images/14.jpg"></span>
+        	<span class="naruto_comics" id="naruto_15"><img src="Images/15.jpg"></span>
+        	<span class="naruto_comics" id="naruto_16"><img src="Images/16.jpg"></span>
+        	
+        </div>
+
+<script src="js/comics.js">
+
+</script>
+<style type="text/css">
+
+  .naruto_comics{
+      left: 300px;
+    position: relative;
+display:none;
+  }
+  .toolbarbutton{
+        top: 105px;
+    left: 370px;
+  }
+
+</style>
+</body>
+</html>

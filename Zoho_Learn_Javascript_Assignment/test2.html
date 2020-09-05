@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Register</title>
+<link rel="stylesheet" type="text/css" href="css/theme.css">
+<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+
+<body >
+<div id="Register_visits"></div>
+<script type="text/javascript">
+
+if(localStorage.Register_visits==="NaN")
+{
+  localStorage.setItem("Register_visits",1);
+}
+else
+{
+  localStorage.Register_visits++;
+}
+  console.log(localStorage.Register_visits);
+  document.getElementById("Register_visits").innerHTML=localStorage.Register_visits;
+</script>
+<script src="js/register.js"> </script>
+
+<div id="username">  </div>
+<div class="topnav" id="topnav">
+  
+   <a href="index.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+
+</div>
+<br><br><br>
+
+<form id="register_details_form">
+	<table>
+	<tr><th id="required_info">Name</th><th><input type="text" id="nameofmember" name=""><br><p id="name_error"></p></th></tr>
+	<tr><th id="required_info">DOB</th><th><input type="text" id="dob" name=""><br><p id="dob_error"></p></th></tr>
+	<tr><th id="required_info">Gender</th><th><input type="radio" id="male" name="radiobtn" value="Check">Male <br><input type="radio" id="female" name="radiobtn">Female <br><p id="gender_error"></p></th></tr>
+	<tr><th id="required_info">Mobile Number</th><th><input type="text" id="mobno" name=""><p id="mobno_error"></p></th></tr>
+</table>
+</form>
+
+<form id="form_submit">
+	
+	<input type="button" value='submit' id="submit" OnClick="show_alert()">
+</form>
+
+
+</body></html>

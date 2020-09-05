@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Browser_Details</title>
+
+  <link rel="stylesheet" type="text/css" href="css/theme.css">
+</head>
+<body>
+<div id="username">  </div>
+<div id="puzzle_visits"></div>
+<script type="text/javascript">
+
+if(localStorage.puzzle_visits==="NaN")
+{
+  localStorage.setItem("puzzle_visits",1);
+}
+else
+{
+  localStorage.puzzle_visits++;
+}
+  console.log(localStorage.puzzle_visits);
+  document.getElementById("puzzle_visits").innerHTML=localStorage.puzzle_visits;
+</script>
+<div class="topnav" id="topnav">
+ 
+   <a href="index.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+  <a href="    " id="orange_design"></a>
+</div>
+<div class="puzzle_container" style="border: 1px solid black; height:610px; width: 610px; display: inline-block;">
+  
+
+ <img class="segments" id="r1c1" onclick="position(this.id,this.value)" value="1" style="left:10px; top:95px;" src=""> 
+ <img class="segments" id="r1c2" onclick="position(this.id,this.value)" value="2" style="left:210px; top:95px;" src=""> 
+ <img class="segments" id="r1c3" onclick="position(this.id,this.value)" value="3" style="left:410px; top:95px;" src="">  
+ <img class="segments" id="r2c1" onclick="position(this.id,this.value)" value="4" style="left:10px; top:295px;" src="">
+ <img class="segments" id="r2c2" onclick="position(this.id,this.value)" value="5" style="left:210px; top:295px;" src="">
+ <img class="segments" id="r2c3" onclick="position(this.id,this.value)" value="6" style="left:410px; top:295px;" src="">
+ <img class="segments" id="r3c1" onclick="position(this.id,this.value)" value="7" style="left:10px; top:495px;" src="">  
+ <img class="segments" id="r3c2" onclick="position(this.id,this.value)" value="8" style="left:210px; top:495px;" src="">
+ <img class="segments" id="r3c3" onclick="position(this.id,this.value)" value="9" style="left:410px; top:495px;" src=""> 
+ </div>
+ <button class="button" onclick="shuffle()" style=" float: right; ">Shuffle</button>
+
+<script src="js/puzzle.js">
+
+</script>
+
+<style type="text/css">
+table,th,td{
+margin: 0 auto;
+padding: 0px;
+height:600px;
+width: 600px;
+font-size: 0px;
+border-spacing: 0px;
+border: none;
+border-width: 0px;
+}
+
+img{
+position: absolute;
+}
+th{
+  height:200px;
+  width:200px;
+}
+.segments{
+  position: absolute;
+}
+  
+</style>
+</body>
+</html>

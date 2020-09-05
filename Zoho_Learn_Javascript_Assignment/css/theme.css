@@ -1,0 +1,121 @@
+.topnav a{
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 20PX 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+
+}
+.topnav{
+	background-color: black;
+	overflow: hidden;
+
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+table, th{
+	border: 1px solid black;
+	border-collapse: collapse;
+	position: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+th,tr{
+	padding: 5px;
+	text-align: center;
+}
+#orange_design{
+float: left;
+background-color: #FF9800;
+overflow: hidden;
+padding-right: 50px;
+padding-bottom: 45px;
+}
+.modal{
+	display: none;
+	position: fixed;
+	top: 10%;
+	left:10%;
+	overflow: auto;
+	height: 80%;
+	width: 80%;
+	z-index: 1;
+	background: rgba(0,0,0,0.7);
+}
+
+.close:hover,.close:focus{
+cursor:pointer;
+}
+.content{
+background-color: none;
+margin: 10% auto;
+width: 90%;
+height: 100%;
+opacity: 1;
+}
+.block1,.block2{    
+	position: relative;
+    color: white;
+    padding: 32px;
+}
+.responsive{
+	display: inline-flex;
+	    width: 250px;
+    height: 250px;
+}
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 200px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    
+}
+#previous_img, #next_img{
+	display: block;
+	font-size: 20px;
+	vertical-align: center;
+}
+#previous_img{
+	float: left;
+}
+#next_img{
+	float: right;
+}
+#sdesc {
+    padding: 15px;
+    text-align: center;
+    background-color: #F4F4FF;
+}
+#image_container{
+	
+}
+
+.button{
+	    width: 200px;
+  
+    line-height: 28px;
+    color: white;
+    font-size: 15px;
+    background: black;
+}
+.slider_img{
+    -webkit-box-align: stretch;
+}

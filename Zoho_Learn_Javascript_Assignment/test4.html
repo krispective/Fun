@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Browser_Details</title>
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+</head>
+<body>
+<div id="username">  </div>
+<div id="Animation_visits"></div>
+<script type="text/javascript">
+
+if(localStorage.Animation_visits==="NaN")
+{
+  localStorage.setItem("Animation_visits",1);
+}
+else
+{
+  localStorage.Animation_visits++;
+}
+  console.log(localStorage.Animation_visits);
+  document.getElementById("Animation_visits").innerHTML=localStorage.Animation_visits;
+</script>
+<div class="topnav" id="topnav">
+ 
+   <a href="index.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+  <a href="    " id="orange_design"></a>
+</div>
+
+<style>
+#myContainer {
+  width: 600px;
+  height: 600px;
+  position: relative;
+  background: none;
+}
+#myAnimation {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+}
+</style>
+<body>
+
+<p>
+<button class="animation_button" onclick="pac_play()">Play</button> 
+<button class="animation_button" onclick="pac_pause()">Pause</button> 
+<button class="animation_button" onclick="pac_reset()">Reset</button> 
+</p>
+
+<div id ="myContainer">
+<div id="fillup" style="top:0px; left:0px;"></div>
+<div id="fillup" style="top:130px; left:600px;"></div>
+<div id="fillup" style="top:-20px; left:0px;"></div>
+<div id="fillup" style="top:-450px; left:600px;"></div>
+
+<div id ="myAnimation" style="left:500px; top:0px;">
+	<img src="Images/pac.gif" style="height:100px; width:100px;">
+</div>
+</div>
+
+<script src="js/animation.js">
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Browser_Details</title>
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+		<link rel="stylesheet" type="text/css" href="css/sprite.css">
+</head>
+<body>
+<div id="username">  </div>
+<div id="sprite_visits"></div>
+<script type="text/javascript">
+
+if(localStorage.sprite_visits==="NaN")
+{
+  localStorage.setItem("sprite_visits",1);
+}
+else
+{
+  localStorage.sprite_visits++;
+}
+  console.log(localStorage.sprite_visits);
+  document.getElementById("sprite_visits").innerHTML=localStorage.sprite_visits;
+</script>
+<div class="topnav" id="topnav">
+ 
+   <a href="index.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+  <a href="    " id="orange_design"></a>
+</div>
+<div class="main_container">
+	<div class="sector_details">
+		<div class="row_details">
+			<input class="image_row" id="image_row" type="text" name="">
+			<input class="image_col" id="image_col" type="text" name="">
+			<button class="find_images" onclick="display_sprite()">Submit</button>
+		</div>
+	</div>
+	<div class="image_sector">
+		<img id="sprite" src="">
+	
+	</div>
+</div>
+
+<script src="js/sprite.js">
+
+</script>
+
+<style type="text/css">
+
+</style>
+
+</body>
+</html>

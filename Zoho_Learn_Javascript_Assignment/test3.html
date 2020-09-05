@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Browser_Details</title>
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+</head>
+<body>
+<div id="username">  </div>
+<div id="companies_visits"></div>
+<script type="text/javascript">
+
+if(localStorage.companies_visits==="NaN")
+{
+  localStorage.setItem("companies_visits",1);
+}
+else
+{
+  localStorage.companies_visits++;
+}
+  console.log(localStorage.companies_visits);
+  document.getElementById("companies_visits").innerHTML=localStorage.companies_visits;
+</script>
+<div class="topnav" id="topnav">
+    <a href="index.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+  <a href="    " id="orange_design"></a>
+</div>
+
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/dominos.png" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('dominos_modal').style.display='block'; runclick('dominos_modal',0)" class="button" value="Click for more details...">
+		<span id="dominos_modal" class="modal" onclick="document.getElementById('dominos_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_dominos_modal"></p>
+					<p id="ceo_name_dominos_modal"></p>
+					<p id="yos_dominos_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/bbq.jpg" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('bbq_modal').style.display='block'; runclick('bbq_modal',1)" class="button" value="Click for more details...">
+		<span id="bbq_modal" class="modal" onclick="document.getElementById('bbq_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_bbq_modal"></p>
+					<p id="ceo_name_bbq_modal"></p>
+					<p id="yos_bbq_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/puma.gif" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('puma_modal').style.display='block'; runclick('puma_modal',2)" class="button" value="Click for more details...">
+		<span id="puma_modal" class="modal" onclick="document.getElementById('puma_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_puma_modal"></p>
+					<p id="ceo_name_puma_modal"></p>
+					<p id="yos_puma_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/kfc.png" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('kfc_modal').style.display='block'; runclick('kfc_modal',3)" class="button" value="Click for more details...">
+		<span id="kfc_modal" class="modal" onclick="document.getElementById('kfc_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_kfc_modal"></p>
+					<p id="ceo_name_kfc_modal"></p>
+					<p id="yos_kfc_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/subway.png" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('subway_modal').style.display='block'; runclick('subway_modal',4)" class="button" value="Click for more details...">
+		<span id="subway_modal" class="modal" onclick="document.getElementById('subway_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_subway_modal"></p>
+					<p id="ceo_name_subway_modal"></p>
+					<p id="yos_subway_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/mcd.png" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('mcd_modal').style.display='block'; runclick('mcd_modal',5)" class="button" value="Click for more details...">
+		<span id="mcd_modal" class="modal" onclick="document.getElementById('mcd_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_mcd_modal"></p>
+					<p id="ceo_name_mcd_modal"></p>
+					<p id="yos_mcd_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/cream.jpg" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('cream_modal').style.display='block'; runclick('cream_modal',6)" class="button" value="Click for more details...">
+		<span id="cream_modal" class="modal" onclick="document.getElementById('cream_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_cream_modal"></p>
+					<p id="ceo_name_cream_modal"></p>
+					<p id="yos_cream_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/Levis.jpg" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('levi_modal').style.display='block'; runclick('levi_modal',7)" class="button" value="Click for more details...">
+		<span id="levi_modal" class="modal" onclick="document.getElementById('levi_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_levi_modal"></p>
+					<p id="ceo_name_levi_modal"></p>
+					<p id="yos_levi_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/pizzahut.png" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('pizzahut_modal').style.display='block'; runclick('pizzahut_modal',8)" class="button" value="Click for more details...">
+		<span id="pizzahut_modal" class="modal" onclick="document.getElementById('pizzahut_modal').style.display='none'" class="w3-button w3-display-topright">
+        	<div class="content">
+				<span class="close">&times;</span>
+				<div class="block1">
+					
+				</div>
+				<div class="block2">
+					<p id="title_pizzahut_modal"></p>
+					<p id="ceo_name_pizzahut_modal"></p>
+					<p id="yos_pizzahut_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+		<img src="Images/hbo.png" alt="Mountain View">
+		<input type="button" onclick="document.getElementById('hbo_modal').style.display='block'; runclick('hbo_modal',9)" class="button" value="Click for more details...">
+		<span id="hbo_modal" class="modal" class="w3-button w3-display-topright">
+        	<div class="content">
+        	<input type="button" onclick="document.getElementById('hbo_modal').style.display='none'" class="button_close" value="X" style="padding: 10px; background-color: red; color: white;">
+				<div class="block1">
+					<div id="image_container">
+					<span class="hbo_slider_img" id="hbo_img_0"><img src="Images/hbo_img_0.jpg"></span>
+					<span class="hbo_slider_img" id="hbo_img_1"><img src="Images/hbo_img_1.jpg"></span>
+					<span class="hbo_slider_img" id="hbo_img_2"><img src="Images/hbo_img_2.jpg"></span>
+					<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  					<button class="w3-button w3-black w3-display-right" style="float: right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+				</div>
+				<div class="block2">
+					<p id="title_hbo_modal"></p>
+					<p id="ceo_name_hbo_modal"></p>
+					<p id="yos_hbo_modal"></p>
+				</div>
+		
+	   		 </div>
+        </span>
+	</div>
+</div>
+
+
+<script src="js/companies.js"></script>
+
+</body>
+
+</html>

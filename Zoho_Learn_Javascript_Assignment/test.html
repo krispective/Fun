@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Browser_Details</title>
+	<link rel="stylesheet" type="text/css" href="css/theme.css">
+</head>
+<body>
+<div id="username">  </div>
+<div id="BD_visits"></div>
+<script type="text/javascript">
+
+if(localStorage.BD_visits==="NaN")
+{
+  localStorage.setItem("BD_visits",1);
+}
+else
+{
+  localStorage.BD_visits++;
+}
+  console.log(localStorage.BD_visits);
+  document.getElementById("BD_visits").innerHTML=localStorage.BD_visits;
+</script>
+<div class="topnav" id="topnav">
+ 
+   <a href="test.html">Browser Details</a>
+  <a href="test2.html">Register</a>
+  <a href="test3.html">Companies</a>
+  <a href="test4.html">Animation</a>
+  <a href="test5.html">Roman Letter</a>
+  <a href="test6.html">Sprite Images</a>
+  <a href="test7.html">Comics</a>
+  <a href="line_story.html">Line Story</a>
+  <a href="attempting_common_function_puzzle.html">Puzzle</a>
+  <a href="    " id="orange_design"></a>
+</div>
+
+<br><br>
+<table>
+<tr><th>Screen Height</th><th><p id="col2row1"></p></th></tr>
+<tr><th>Screen Width</th><th><p id="col2row2"></p></th></tr>
+<tr><th>Browser name</th><th><p id="col2row3"></p></th></tr>
+<tr><th>Browser version</th><th><p id="col2row4"></p></th></tr>
+
+</table>
+
+
+
+<script>
+
+    document.getElementById("col2row1").innerHTML = screen.height;
+    document.getElementById("col2row2").innerHTML = screen.width;
+    document.getElementById("col2row3").innerHTML = navigator.appCodeName;
+    document.getElementById("col2row4").innerHTML = navigator.appVersion;
+
+</script>
+
+</body>
+</html>
